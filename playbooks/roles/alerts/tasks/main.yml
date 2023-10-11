@@ -5,5 +5,5 @@
     body_format: json
     body:
       title: "Alert!!! the bellow certificates is about to expire:"
-      text: "{{ expire_days }}"
+      text: "Server: {{ server }} will expire in {{ expire_days }} days"
   when: expire_days < 90
