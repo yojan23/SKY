@@ -1,1 +1,10 @@
-
+- hosts: all
+  gather_facts: yes
+  vars_files:
+  - ../roles/vars.yml
+  tasks:
+    server: "{{ item }}"
+  roles:
+    - role: checking
+    - role: alerts
+  loop: {{ list }}
