@@ -1,1 +1,4 @@
-
+list:
+  - server01.com
+  - server02.com
+  - server03.com
