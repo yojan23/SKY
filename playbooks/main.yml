@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: hostname
   gather_facts: yes
   vars_files:
   - ../roles/vars.yml
