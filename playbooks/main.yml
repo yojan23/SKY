@@ -1,7 +1,7 @@
 - hosts: hostname
   gather_facts: yes
   vars_files:
-  - ../roles/vars.yml
+  - ../vars/vars.yml
   tasks:
     server: "{{ item }}"
   roles:
